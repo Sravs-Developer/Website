@@ -1,0 +1,71 @@
+<html>
+    <head>
+      <title>Login And Registration</title>
+      <link rel="stylesheet" href="css/style2.css" type="text/css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+      <div class="nav-menu">
+        <ul>
+          <li class="active"><a href="Index.html"><i class="fa fa-home"></i>Home</a>
+          </li>
+          <li><a href="about.html"><i class="fa fa-user-circle-o"></i>About Us</a>
+              <div class="sub-menu-1">
+                 <ul>
+                   <li><a href="#">Healthcare</a></li>
+                   <li><a href="#">Training</a></li>
+                   <li><a href="#">Service</a></li>
+                 </ul>
+              </div>
+            </li> 
+          <li><a href="Breeds.html"><i class="fa fa-paw"></i>Breeds</a></li>
+          <li><a href="Adoption.html"><i class="fa fa-handshake-o"></i>Adoption</a></li>
+          <li><a href="Contact.html"><i class="fa fa-phone-square"></i>Contact</a></li>
+        </ul>
+       </div>
+        <div class="login">
+          <div class="form-box">
+            <div class="button-box">
+              <div id="btn"></div>
+              <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+              <button type="button" class="toggle-btn" onclick="register()">Register</button>
+           </div> 
+           <div class="social-icons">
+              <img src="image/fb.png">
+              <img src="image/tw.png">
+              <img src="image/In.png">
+          </div>
+          <form id="login" class="input-group">
+          <input type="text" class="input-field" placeholder="User Id" required>
+          <input type="text" class="input-field" placeholder="Enter Password" required>
+          <input type="checkbox" class="check-box"><span>Remember Password</span>
+          <button type="submit" class="submit-btn">log in</button>
+          </form>
+          <form id="register" class="input-group">
+            <input type="text" class="input-field" placeholder="User Id" required>
+            <input type="email" class="input-field" placeholder="Email Id" required>
+            <input type="text" class="input-field" placeholder="Enter Password" required>
+            <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+            <button type="submit" class="submit-btn">Register</button>
+            </form>
+      </div> 
+    </div> 
+    <script>
+    var x = document.getElementById("login");
+    var y = document.getElementById("register");
+    var z = document.getElementById("btn");
+
+    function register(){
+      x.style.left = "-400px";
+      y.style.left = "50px";
+      z.style.left = "110px";
+    }
+    function login(){
+      x.style.left = "50px";
+      y.style.left = "450px";
+      z.style.left = "0px";
+    }
+
+    </Script>
+    </body>
+</html>
